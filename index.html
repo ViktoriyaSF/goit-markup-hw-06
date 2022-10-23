@@ -382,7 +382,7 @@
             <button type="submit" class="footer-input-button"
               >Підписатися
               <svg class="footer-input-icon">
-                <use href="./images/icons.svg#icon-icon-send"></use>
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
@@ -397,6 +397,40 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="model-titel">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form" autocomplete="off">
+          <ul class="list">
+            <li class="model-list">
+              <label class="model-label">
+                <span class="label-titel">Ім'я</span>
+                <input class="model-input" type="text" name="name" />
+                <svg class="model-icon"><use href="./images/icons.svg#icon-person"></use></svg>
+              </label>
+            </li>
+            <li class="model-list">
+              <label class="model-label">
+                <span class="label-titel">Телефон</span>
+                <input class="model-input" type="tel" name="tel" />
+                <svg class="model-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
+              </label>
+            </li>
+            <li class="model-list">
+              <label class="model-label">
+                <span class="label-titel">Пошта</span>
+                <input class="model-input" type="email" name="email" />
+                <svg class="model-icon"><use href="./images/icons.svg#icon-email"></use></svg>
+              </label>
+            </li>
+            <li class="model-list">
+              <label class="model-label">
+                <span class="label-titel">Коментар</span>
+                <textarea class="textarea model-input" name="Коментар" rows="5" placeholder="Введіть текст"></textarea>
+              </label>
+            </li>
+          </ul>
+        </form>
+        <p class="a">Погоджуюся з розсилкою та приймаю Умови договору</p>
+        <button class="model-button" type="button">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
