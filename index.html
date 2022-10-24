@@ -377,7 +377,7 @@
         <!------- Приєднайся залиш свою пошту --------------->
         <div class="footer-input">
           <p class="footer-input-title">Підпишіться на розсилку</p>
-          <form class="footer-form">
+          <form class="footer-form" autocomplete="off">
             <label for="footer-email" class="footer-label"> <input type="email" name="email" id="footer-email" placeholder="E-mail" class="footer-label-input" /></label>
             <button type="submit" class="footer-input-button"
               >Підписатися
@@ -397,6 +397,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <!-- ------модуль----- -->
         <p class="model-titel">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form" autocomplete="off">
           <ul class="list">
@@ -429,7 +430,13 @@
             </li>
           </ul>
         </form>
-        <p class="a">Погоджуюся з розсилкою та приймаю Умови договору</p>
+        <form class="form-checkbox">
+          <label class="model-checkbox">
+            <input type="checkbox" name="checkbox" class="checkbox" />
+            <svg class="checkbox-icon"><use href="./images/icons.svg#icon-check"></use></svg>
+            <span class="model-text">Погоджуюся з розсилкою та приймаю <a href="#" class="model-condition">Умови договору</a></span>
+          </label>
+        </form>
         <button class="model-button" type="button">Відправити</button>
       </div>
     </div>
