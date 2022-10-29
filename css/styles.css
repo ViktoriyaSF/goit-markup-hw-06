@@ -813,7 +813,6 @@ button {
 .icon-close-button:focus {
   color: var(--activ);
 }
-/* ----------модуль ------------------ */
 .model-titel {
   margin-bottom: 12px;
 
@@ -822,15 +821,18 @@ button {
   line-height: 1.15;
   text-align: center;
 }
-.model-list:not(:last-child) {
-  margin-bottom: 10px;
-}
-.model-label {
+/* ----------модуль ------------------ */
+.form-label {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  margin-bottom: 10px;
 }
-.label-titel {
+.comment {
+  margin-bottom: 20px;
+}
+.form-titel {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -840,14 +842,14 @@ button {
 
   color: var(--color-text);
 }
-.model-input {
+.form-input {
   padding: 11px 0px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
   transition: border-color var(--time) var(--time-function);
 }
-.model-icon {
+.form-icon {
   position: absolute;
 
   height: 18px;
@@ -859,10 +861,10 @@ button {
 
   transition: fill var(--time) var(--time-function);
 }
-.model-input:hover,
-.model-input:hover + .model-icon,
-.model-input:focus,
-.model-input:focus + .model-icon {
+.form-input:hover,
+.form-input:hover + .form-icon,
+.form-input:focus,
+.form-input:focus + .form-icon {
   border-color: var(--activ);
   fill: var(--activ);
 }
@@ -879,12 +881,8 @@ button {
   resize: none;
 
   padding: 12px 16px;
-  margin-bottom: 20px;
 }
-.a {
-  margin-bottom: 30px;
-}
-.model-button {
+.form-button {
   margin: 0 auto;
 
   padding: 10px 52px;
@@ -902,44 +900,43 @@ button {
 
   transition: background-color var(--time) var(--time-function);
 }
-.model-button:hover,
-.model-button:focus {
+.form-button:hover,
+.form-button:focus {
   background-color: var(--activ-button);
 }
 /* -----------checkbox--------------- */
-.form-checkbox {
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   margin-bottom: 30px;
 }
-.model-checkbox {
-  position: relative;
+.checkbox-input {
+  appearance: none;
 }
-.model-text {
+.checkbox-text {
   font-size: 14px;
   line-height: 1.71;
   margin-left: 36px;
 
   color: var(--color-text);
 }
-.model-condition {
+.checkbox-condition {
   color: var(--activ);
-}
-.checkbox {
-  appearance: none;
 }
 .checkbox-icon {
   position: absolute;
   left: 12px;
-  bottom: 0;
+  top: 5px;
 
   width: 15px;
   height: 16px;
 
   border: 2px solid var(--color-title);
-  /* background-color: var(--up-white-background); */
 
   transition: background-color var(--time) var(--time-function), border-color var(--time) var(--time-function);
 }
-.checkbox:checked + .checkbox-icon {
+.checkbox-input:checked + .checkbox-icon {
   background-color: var(--activ);
   border-color: transparent;
 }

@@ -397,47 +397,35 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <!-- ------модуль----- -->
         <p class="model-titel">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form" autocomplete="off">
-          <ul class="list">
-            <li class="model-list">
-              <label class="model-label">
-                <span class="label-titel">Ім'я</span>
-                <input class="model-input" type="text" name="name" />
-                <svg class="model-icon"><use href="./images/icons.svg#icon-person"></use></svg>
-              </label>
-            </li>
-            <li class="model-list">
-              <label class="model-label">
-                <span class="label-titel">Телефон</span>
-                <input class="model-input" type="tel" name="tel" />
-                <svg class="model-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
-              </label>
-            </li>
-            <li class="model-list">
-              <label class="model-label">
-                <span class="label-titel">Пошта</span>
-                <input class="model-input" type="email" name="email" />
-                <svg class="model-icon"><use href="./images/icons.svg#icon-email"></use></svg>
-              </label>
-            </li>
-            <li class="model-list">
-              <label class="model-label">
-                <span class="label-titel">Коментар</span>
-                <textarea class="textarea model-input" name="Коментар" rows="5" placeholder="Введіть текст"></textarea>
-              </label>
-            </li>
-          </ul>
-        </form>
-        <form class="form-checkbox">
-          <label class="model-checkbox">
-            <input type="checkbox" name="checkbox" class="checkbox" />
-            <svg class="checkbox-icon"><use href="./images/icons.svg#icon-check"></use></svg>
-            <span class="model-text">Погоджуюся з розсилкою та приймаю <a href="#" class="model-condition">Умови договору</a></span>
+        <!-- ------модуль----- -->
+        <form class="form" autocomplete="off">
+          <label class="form-label">
+            <span class="form-titel">Ім'я</span>
+            <input class="form-input" type="text" name="name" />
+            <svg class="form-icon"><use href="./images/icons.svg#icon-person"></use></svg>
           </label>
+          <label class="form-label">
+            <span class="form-titel">Телефон</span>
+            <input class="form-input" type="tel" name="tel" />
+            <svg class="form-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
+          </label>
+          <label class="form-label">
+            <span class="form-titel">Пошта</span>
+            <input class="form-input" type="email" name="email" />
+            <svg class="form-icon"><use href="./images/icons.svg#icon-email"></use></svg>
+          </label>
+          <label class="form-label comment">
+            <span class="form-titel">Коментар</span>
+            <textarea class="textarea form-input" name="Коментар" rows="5" placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox" class="checkbox-input" />
+            <svg class="checkbox-icon"><use href="./images/icons.svg#icon-check"></use></svg>
+            <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-condition">Умови договору</a></span>
+          </label>
+          <button class="form-button" type="submit">Відправити</button>
         </form>
-        <button class="model-button" type="button">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
